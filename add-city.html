@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
+    <link rel="icon" href="img/icon.png">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/add-city.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>
-            <span>Clima App</span>
+            <img src="img/clima.png" alt="Icono de clima"><span>Clima App</span>
         </h1>
         <nav>
             <ul>
@@ -25,17 +29,16 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar Ciudad</h2>
-        <section id="form-city-list">
-            <form action="">
-                <label for="">Ingrese la ciudad a agregar:
-                    <input type="text">
-                </label>
-                <button>Agregar</button>
+        <section class="add-city">
+            <form id="add-city" class= "add-city" action="">
+                <label for="inputCity">Ingrese la ciudad a agregar:</label>
+                <input id="inputCity" name="inputCity" type="text">
+                <button type="button" id="buttonAdd">Agregar</button>
             </form>
-        </section>
-        <section id="section-weather-result">
-            <!-- Sección donde se debe mostrar el clima de la ciudad -->
-        </section>
+            <div id="messajeBox" class="add-city">
+                <!-- Muestra del mensaje -->
+            </div>
+        </section>      
     </main>
     <footer>
         <p>
