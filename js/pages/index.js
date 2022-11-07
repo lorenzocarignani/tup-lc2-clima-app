@@ -1,3 +1,4 @@
+
 let selector = document.getElementById("select-city");
 
 function addCitiesToSelector() {

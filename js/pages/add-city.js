@@ -1,3 +1,4 @@
+
 async function validateCity(newCity) {
     let cities = getCitiesFromLocalStorage();
   
